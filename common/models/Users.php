@@ -54,6 +54,8 @@ class Users extends \yii\mongodb\ActiveRecord implements IdentityInterface
             'gender',
             'phone_number',
             'status',
+            'last_login',
+            'is_logged_in',
             'created_at',
             'updated_at',
         ];
@@ -65,7 +67,7 @@ class Users extends \yii\mongodb\ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            [['email', 'password', 'first_name', 'last_name', 'dob', 'gender', 'phone_number', 'status', 'created_at', 'updated_at'], 'safe']
+            [['email', 'password', 'first_name', 'last_name', 'dob', 'gender', 'phone_number', 'status','last_login','is_logged_in', 'created_at', 'updated_at'], 'safe']
         ];
     }
 
@@ -85,6 +87,8 @@ class Users extends \yii\mongodb\ActiveRecord implements IdentityInterface
             'gender'       => 'Gender',
             'phone_number' => 'Phone Number',
             'status'       => 'Status',
+            'last_login'   => 'Last Login',
+            'is_logged_in' => 'Is Logged In',
             'created_at'   => 'Created At',
             'updated_at'   => 'Updated At',
         ];

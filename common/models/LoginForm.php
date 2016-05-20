@@ -7,7 +7,7 @@ use yii\base\Model;
 /**
  * Login form
  */
-class LoginForm extends Model
+class LoginForm extends \yii\mongodb\ActiveRecord
 {
     public $username;
     public $password;
@@ -43,10 +43,8 @@ class LoginForm extends Model
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-            if (!$user || !$user->validatePassword($this->password)) {
+            if (!$user || $user->password !== $this->password) {
                 $this->addError($attribute, 'Incorrect username or password.');
-            }else if (!$user || ($user->role_id != Yii::$app->params['userroles']['teachers'] && $user->role_id != Yii::$app->params['userroles']['student'])) {
-                $this->addError($attribute, Yii::t('app','Incorrect username or password.'));
             }else if (!$user || $user->status == self::CONFIRMATION_STATUS) {
                 $this->addError($attribute, "Your account needs to verify.");
             }else if (!$user || $user->status != self::ACTIVE_STATUS) {

@@ -1,18 +1,27 @@
 <?php
 namespace frontend\models;
 
-use common\models\User;
+use common\models\Users;
 use yii\base\Model;
 use Yii;
 
 /**
  * Signup form
  */
-class SignupForm extends Model
+class SignupForm extends \yii\mongodb\ActiveRecord
 {
     public $username;
     public $email;
     public $password;
+
+    
+    /**
+     * @inheritdoc
+    */
+    public static function collectionName()
+    {
+        return 'users';
+    }
 
     /**
      * @inheritdoc
@@ -22,13 +31,13 @@ class SignupForm extends Model
         return [
             ['username', 'filter', 'filter' => 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => '\common\models\Users', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'filter', 'filter' => 'trim'],
             ['email', 'required'],
             ['email', 'email'],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\Users', 'message' => 'This email address has already been taken.'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -43,11 +52,15 @@ class SignupForm extends Model
     public function signup()
     {
         if ($this->validate()) {
-            $user = new User();
-            $user->username = $this->username;
+            $user = new Users();
+            $user->first_name = $this->username;
             $user->email = $this->email;
-            $user->setPassword($this->password);
-            $user->generateAuthKey();
+            $user->role_id = '3';
+            //$user->setPassword($this->password);
+            $user->password = $this->password;
+            $user->status = '1';
+            $user->created_at = date('Y-m-d h:i:s');
+            //$user->generateAuthKey();
             if ($user->save()) {
                 return $user;
             }
