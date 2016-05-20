@@ -1,0 +1,2048 @@
+2016-05-18 19:22:29 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/about' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('about', Array)
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/about', Array)
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-18 19:22:30 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(136): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\common\models\UserRulesMenu.php(117): yii\mongodb\ActiveQuery->all()
+#7 C:\wamp\www\yii2-mongo\common\models\UserRulesMenu.php(85): common\models\UserRulesMenu::createTree()
+#8 C:\wamp\www\yii2-mongo\backend\views\layouts\sidebar.php(8): common\models\UserRulesMenu::getMenu()
+#9 C:\wamp\www\yii2-mongo\backend\views\layouts\main.php(59): ::unknown()
+#10 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\ErrorAction.php(108): yii\base\Controller->render()
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Action.php(92): yii\web\ErrorAction->run()
+#16 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Action.php:92}()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\Action->runWithParams()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\ErrorHandler.php(80): yii\base\Module->runAction()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ErrorHandler.php(95): yii\web\ErrorHandler->renderException()
+#21 {main}
+2016-05-18 19:22:29 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '6f762093dfde6f07e3f5522ce3dbf3f3af1101bfeba6a154410516330f1833fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWR6F8p9PuSonOSv6zAq-omnfYl24Mp8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=6f762093dfde6f07e3f5522ce3dbf3f3af1101bfeba6a154410516330f1833fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWR6F8p9PuSonOSv6zAq-omnfYl24Mp8%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52293'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/about'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592149.198
+    'REQUEST_TIME' => 1463592149
+]
+2016-05-18 19:22:46 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-18 19:22:46 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'eC5nWkNoclhKayQABkU2OzJLISkgGTc0K2IoFQ4JJG5PeCNsJy0xBw=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => 'e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2ECZE-DcJeFscqElSLOOMaV67VD6dEC_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222ECZE-DcJeFscqElSLOOMaV67VD6dEC_%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '219'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52366'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592166.256
+    'REQUEST_TIME' => 1463592166
+]
+2016-05-18 19:23:10 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-18 19:23:10 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'eC5nWkNoclhKayQABkU2OzJLISkgGTc0K2IoFQ4JJG5PeCNsJy0xBw=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => 'e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2ECZE-DcJeFscqElSLOOMaV67VD6dEC_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222ECZE-DcJeFscqElSLOOMaV67VD6dEC_%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '219'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52372'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592190.363
+    'REQUEST_TIME' => 1463592190
+]
+2016-05-18 19:23:32 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-18 19:23:32 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'eC5nWkNoclhKayQABkU2OzJLISkgGTc0K2IoFQ4JJG5PeCNsJy0xBw=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => 'e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2ECZE-DcJeFscqElSLOOMaV67VD6dEC_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222ECZE-DcJeFscqElSLOOMaV67VD6dEC_%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '219'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52375'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592212.527
+    'REQUEST_TIME' => 1463592212
+]
+2016-05-18 19:29:35 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-18 19:29:34 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'ajlFLW5vTzBYfAZ3K0ILUyBcA14NHgpcOXUKYiMOGQZdbwEbCioMbw=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => 'e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2ECZE-DcJeFscqElSLOOMaV67VD6dEC_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222ECZE-DcJeFscqElSLOOMaV67VD6dEC_%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '219'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52947'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592574.764
+    'REQUEST_TIME' => 1463592574
+]
+2016-05-18 19:29:45 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-18 19:29:45 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'SjdhTENZaHp4ciIWBnQsGQBSJz8gKC0WGXsuAw44Pkx9YSV6JxwrJQ=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => 'e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2ECZE-DcJeFscqElSLOOMaV67VD6dEC_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=e9b1fd8b588067fc9862008264029629b948b19e4ea15a573f6035b1ee858a0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222ECZE-DcJeFscqElSLOOMaV67VD6dEC_%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '219'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '52948'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463592585.009
+    'REQUEST_TIME' => 1463592585
+]
+2016-05-19 19:00:09 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-19 19:00:08 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'cXpBQ2EyYmdIOR4oClBSUS44BygnAi0iMyg7CTR2IAtBCCU6CX4NFA=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9C_kkb06_BFkF0OEBRzJUDBl0rdyhLos\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '__captcha/site/captcha' => 'niygmi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229C_kkb06_BFkF0OEBRzJUDBl0rdyhLos%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '228'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '58806'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463677208.888
+    'REQUEST_TIME' => 1463677208
+]
+2016-05-19 19:07:46 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-19 19:07:42 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'TzFpMndyTm12cjZZHBB.WxBzL1kxQgEoDWMTeCI2DAF/Qw1LHz4hHg=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9C_kkb06_BFkF0OEBRzJUDBl0rdyhLos\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '__captcha/site/captcha' => 'niygmi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229C_kkb06_BFkF0OEBRzJUDBl0rdyhLos%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '230'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '59126'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463677662.417
+    'REQUEST_TIME' => 1463677662
+]
+2016-05-19 19:14:59 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-19 19:14:57 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'TzFpMndyTm12cjZZHBB.WxBzL1kxQgEoDWMTeCI2DAF/Qw1LHz4hHg=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9C_kkb06_BFkF0OEBRzJUDBl0rdyhLos\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '__captcha/site/captcha' => 'niygmi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229C_kkb06_BFkF0OEBRzJUDBl0rdyhLos%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '230'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '59606'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463678097.404
+    'REQUEST_TIME' => 1463678097
+]
+2016-05-19 19:15:39 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-19 19:15:39 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'TzFpMndyTm12cjZZHBB.WxBzL1kxQgEoDWMTeCI2DAF/Qw1LHz4hHg=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9C_kkb06_BFkF0OEBRzJUDBl0rdyhLos\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '__captcha/site/captcha' => 'niygmi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229C_kkb06_BFkF0OEBRzJUDBl0rdyhLos%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '230'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '59646'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463678139.222
+    'REQUEST_TIME' => 1463678139
+]
+2016-05-19 19:26:53 [::1][-][qg394cs67q89eipud9nlcqgst5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoClient' not found' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor()
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#8 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne()
+#9 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername()
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): common\models\AdminLoginForm->validatePassword()
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): ::call_user_func:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php:69}()
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute()
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes()
+#15 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#16 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#17 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\SiteController->actionLogin()
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#23 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-05-19 19:26:48 [::1][-][qg394cs67q89eipud9nlcqgst5][info][application] $_POST = [
+    '_csrf' => 'TzFpMndyTm12cjZZHBB.WxBzL1kxQgEoDWMTeCI2DAF/Qw1LHz4hHg=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_identity' => '0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf\",2592000]\";}'
+    'PHPSESSID' => 'qg394cs67q89eipud9nlcqgst5'
+    '_csrf' => '27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9C_kkb06_BFkF0OEBRzJUDBl0rdyhLos\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '__captcha/site/captcha' => 'niygmi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => '_identity=0731bbd2d5dac6be61c2bfee69374d1516e29754eabefa0a82d6e937b6e7064ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22y4WKAL4Ww6O3glPrBvsWYHqH0IsgEwFf%22%2C2592000%5D%22%3B%7D; PHPSESSID=qg394cs67q89eipud9nlcqgst5; _csrf=27b8a6eb43a0185e0d3c3f23ae429a6c60b3d8f2cbfb98fbf9081dc82fe2de70a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229C_kkb06_BFkF0OEBRzJUDBl0rdyhLos%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '230'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '51785'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463678806.26
+    'REQUEST_TIME' => 1463678806
+]
+2016-05-20 18:12:33 [::1][-][-][error][yii\mongodb\Exception] exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Authentication failed on database 'test' with username 'root': auth failed' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(247): MongoClient->__construct('mongodb://root:...', Array)
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(168): yii\mongodb\Connection->open()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase('test')
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection('users')
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection(NULL)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor(NULL)
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor(NULL)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one(NULL)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#10 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername('admin@admin.com')
+#12 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#13 [internal function]: common\models\AdminLoginForm->validatePassword('password', NULL)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\AdminLoginForm), 'password')
+#16 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\AdminLoginForm), Array)
+#17 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#18 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#24 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'Failed to connect to: localhost:27017: Authentication failed on database 'test' with username 'root': auth failed' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:252
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(168): yii\mongodb\Connection->open()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase('test')
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection('users')
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection(NULL)
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor(NULL)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor(NULL)
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one(NULL)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#9 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne(Array)
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername('admin@admin.com')
+#11 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#12 [internal function]: common\models\AdminLoginForm->validatePassword('password', NULL)
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\AdminLoginForm), 'password')
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\AdminLoginForm), Array)
+#16 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#17 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#18 [internal function]: backend\controllers\SiteController->actionLogin()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#23 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#25 {main}
+2016-05-20 18:12:31 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'QnFqWXpGUUcXHCZsEy0zDTcCXg1KLiMsOz9SCE4uZAQWQQUICQxlBQ=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h207jbjjbkp9dkutbqb2p2oku4'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=h207jbjjbkp9dkutbqb2p2oku4; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '228'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64650'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760751.608
+    'REQUEST_TIME' => 1463760751
+]
+2016-05-20 18:13:17 [::1][-][-][error][yii\mongodb\Exception] exception 'MongoConnectionException' with message 'Failed to connect to: localhost:27017: Authentication failed on database 'students_era' with username 'root': auth failed' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:247
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(247): MongoClient->__construct('mongodb://root:...', Array)
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(168): yii\mongodb\Connection->open()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase('students_era')
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection('users')
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection(NULL)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor(NULL)
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor(NULL)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one(NULL)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#10 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername('admin@admin.com')
+#12 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#13 [internal function]: common\models\AdminLoginForm->validatePassword('password', NULL)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\AdminLoginForm), 'password')
+#16 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\AdminLoginForm), Array)
+#17 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#18 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#24 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'Failed to connect to: localhost:27017: Authentication failed on database 'students_era' with username 'root': auth failed' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php:252
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(168): yii\mongodb\Connection->open()
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(134): yii\mongodb\Connection->selectDatabase('students_era')
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Connection.php(191): yii\mongodb\Connection->getDatabase()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(199): yii\mongodb\Connection->getCollection('users')
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(105): yii\mongodb\ActiveQuery->getCollection(NULL)
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor(NULL)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\Query.php(196): yii\mongodb\ActiveQuery->buildCursor(NULL)
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(152): yii\mongodb\Query->one(NULL)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\mongodb\ActiveQuery->one()
+#9 C:\wamp\www\yii2-mongo\common\models\Users.php(119): yii\db\BaseActiveRecord::findOne(Array)
+#10 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(103): common\models\Users::findByUsername('admin@admin.com')
+#11 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(62): common\models\AdminLoginForm->getUser()
+#12 [internal function]: common\models\AdminLoginForm->validatePassword('password', NULL)
+#13 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\AdminLoginForm), 'password')
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\AdminLoginForm), Array)
+#16 C:\wamp\www\yii2-mongo\common\models\AdminLoginForm.php(80): yii\base\Model->validate()
+#17 C:\wamp\www\yii2-mongo\backend\controllers\SiteController.php(59): common\models\AdminLoginForm->login()
+#18 [internal function]: backend\controllers\SiteController->actionLogin()
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#22 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#23 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#25 {main}
+2016-05-20 18:13:16 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'OC5sZF9ZcXZtQyBRNjITPE1dWDBvMQMdQWBUNWsxRDVsHgM1LBNFNA=='
+    'AdminLoginForm' => [
+        'username' => 'admin@admin.com'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h207jbjjbkp9dkutbqb2p2oku4'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=h207jbjjbkp9dkutbqb2p2oku4; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '228'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64793'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/login'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760796.214
+    'REQUEST_TIME' => 1463760796
+]
+2016-05-20 18:13:45 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:13:44 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64848'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760824.911
+    'REQUEST_TIME' => 1463760824
+]
+2016-05-20 18:13:50 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: db' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\di\ServiceLocator.php:136
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(491): yii\di\ServiceLocator->get('db')
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(133): yii\base\Application->getDb()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\ActiveRecord::getDb()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\data\ActiveDataProvider.php(177): yii\db\ActiveRecord->attributes()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\data\BaseDataProvider.php(211): yii\data\ActiveDataProvider->setSort(Array)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\DataColumn.php(141): yii\data\BaseDataProvider->getSort()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\Column.php(83): yii\grid\DataColumn->renderHeaderCellContent()
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(356): yii\grid\Column->renderHeaderCell()
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(294): yii\grid\GridView->renderTableHeader()
+#10 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\grid\GridView->renderItems()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(264): yii\widgets\BaseListView->renderSection('{items}')
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class='tab...')
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(239): yii\widgets\BaseListView->run()
+#16 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Widget.php(96): yii\grid\GridView->run()
+#17 C:\wamp\www\yii2-mongo\backend\views\email-format\index.php(59): yii\base\Widget::widget(Array)
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\yii...')
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\yii...', Array)
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\yii...', Array, Object(backend\controllers\EmailFormatController))
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\EmailFormatController))
+#22 C:\wamp\www\yii2-mongo\backend\controllers\EmailFormatController.php(43): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\EmailFormatController->actionIndex()
+#24 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#27 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('email-format/in...', Array)
+#28 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}
+2016-05-20 18:13:50 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64854'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/email-format/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/email-format/index'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760830.221
+    'REQUEST_TIME' => 1463760830
+]
+2016-05-20 18:13:57 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:13:57 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64902'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760837.864
+    'REQUEST_TIME' => 1463760837
+]
+2016-05-20 18:14:23 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:14:22 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64917'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760862.278
+    'REQUEST_TIME' => 1463760862
+]
+2016-05-20 18:14:26 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: db' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\di\ServiceLocator.php:136
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(491): yii\di\ServiceLocator->get('db')
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(133): yii\base\Application->getDb()
+#2 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(294): yii\db\ActiveRecord::getDb()
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\db\ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\data\ActiveDataProvider.php(177): yii\db\ActiveRecord->attributes()
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\data\BaseDataProvider.php(211): yii\data\ActiveDataProvider->setSort(Array)
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\DataColumn.php(141): yii\data\BaseDataProvider->getSort()
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\Column.php(83): yii\grid\DataColumn->renderHeaderCellContent()
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(356): yii\grid\Column->renderHeaderCell()
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(294): yii\grid\GridView->renderTableHeader()
+#10 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\grid\GridView->renderItems()
+#11 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(264): yii\widgets\BaseListView->renderSection('{items}')
+#12 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class='tab...')
+#15 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\grid\GridView.php(239): yii\widgets\BaseListView->run()
+#16 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Widget.php(96): yii\grid\GridView->run()
+#17 C:\wamp\www\yii2-mongo\backend\views\email-format\index.php(59): yii\base\Widget::widget(Array)
+#18 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\yii...')
+#19 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\yii...', Array)
+#20 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\yii...', Array, Object(backend\controllers\EmailFormatController))
+#21 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\EmailFormatController))
+#22 C:\wamp\www\yii2-mongo\backend\controllers\EmailFormatController.php(43): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\EmailFormatController->actionIndex()
+#24 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#25 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#26 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#27 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('email-format/in...', Array)
+#28 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#30 {main}
+2016-05-20 18:14:26 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/index'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64920'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/email-format/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/email-format/index'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760866.747
+    'REQUEST_TIME' => 1463760866
+]
+2016-05-20 18:14:30 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:14:29 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => 'd5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=d5de964a613111704a83a53cf6e4e7ad1be596a8484cf046259c4cfd674ebc20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UmL5ikbJus4T0hrkyN8Q4h5CT0oQsJ4B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '64949'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463760869.813
+    'REQUEST_TIME' => 1463760869
+]
+2016-05-20 18:28:11 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:28:10 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '40bb7a9b71955e07e84f9ead8584db97f81ba1aeffa46b067c959c585319c9b5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"euW3sR3Jx_WfN4NPG-nh7a7fdTUwf6nF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=40bb7a9b71955e07e84f9ead8584db97f81ba1aeffa46b067c959c585319c9b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22euW3sR3Jx_WfN4NPG-nh7a7fdTUwf6nF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '65289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463761689.332
+    'REQUEST_TIME' => 1463761689
+]
+2016-05-20 18:28:28 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/logout', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:28:27 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '26187d72d62727d4f15b473f32f68463ab4eccc67e9adb982d94ad08262a8596a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"itIL_fcSPRuP9doKXu61688pk-741PZn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/backend/web/'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/users/index'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=26187d72d62727d4f15b473f32f68463ab4eccc67e9adb982d94ad08262a8596a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22itIL_fcSPRuP9doKXu61688pk-741PZn%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '65326'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/logout'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463761707.494
+    'REQUEST_TIME' => 1463761707
+]
+2016-05-20 18:39:03 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:39:03 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '30efba262f710f4638dd098297c6a8d04e930590546a9f49d6a981ba4d3f704aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zMGSnTrjNTyY6GL7nlAzO6HYVWfgxzgB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/frontend/web/site/logout'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_COOKIE' => 'PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=30efba262f710f4638dd098297c6a8d04e930590546a9f49d6a981ba4d3f704aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zMGSnTrjNTyY6GL7nlAzO6HYVWfgxzgB%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '49652'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463762343.475
+    'REQUEST_TIME' => 1463762343
+]
+2016-05-20 18:39:14 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:39:14 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/frontend/web/site/logout'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '49684'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463762354.047
+    'REQUEST_TIME' => 1463762354
+]
+2016-05-20 18:39:21 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/index', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:39:21 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/frontend/web/site/logout'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '49718'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/index'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463762360.999
+    'REQUEST_TIME' => 1463762360
+]
+2016-05-20 18:39:25 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('change-password', Array)
+#8 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/change-pas...', Array)
+#9 C:\wamp\www\yii2-mongo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp\www\yii2-mongo\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-05-20 18:39:25 [::1][1][-][info][application] $_COOKIE = [
+    'site_title_admin_email' => 'admin@admin.com'
+    'site_title_admin_password' => 'admin'
+    'PHPSESSID' => '4bchdcisht6a5sm4ls1fo4onv3'
+    '_csrf' => '9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/yii2-mongo/frontend/web/site/logout'
+    '_backend' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, xeflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-mongo/backend/web/site/index'
+    'HTTP_COOKIE' => 'site_title_admin_email=admin%40admin.com; site_title_admin_password=admin; PHPSESSID=4bchdcisht6a5sm4ls1fo4onv3; _csrf=9ca5fd6c01191bbab6cf619a4e5e7ac1e65f4a3b3608300b2a86dba05619e696a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nNSNIYJoHhm9kl3IXfj8NNZLiiBIbtNf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/yii2-mongo/backend/web/index.php'
+    'REMOTE_PORT' => '49718'
+    'REDIRECT_URL' => '/yii2-mongo/backend/web/site/change-password'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-mongo/backend/web/site/change-password'
+    'SCRIPT_NAME' => '/yii2-mongo/backend/web/index.php'
+    'PHP_SELF' => '/yii2-mongo/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463762365.011
+    'REQUEST_TIME' => 1463762365
+]
