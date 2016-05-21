@@ -35,33 +35,28 @@ $this->params['breadcrumbs'][] = $this->title;
 */?>
 <div class="container_12 clearfix">
             <div class="grid_12">
-                <div class="form login-form">
-                <form action="#">
-                    <h3 class="rs title-form">Login</h3>
+            <div class="form login-form">
+                <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+                    <h3 class="rs title-form"></h3>
                     <div class="box-white">
                         <h4 class="rs title-box">Already Have an Account?</h4>
                         <p class="rs">Please log in to continue.</p>
                         <div class="form-action">
-                            <label for="txt_email_login">
-                                <input id="txt_email_login" class="txt fill-width" type="email" placeholder="Enter your e-mail address"/>
-                            </label>
-                            <label for="txt_password_login">
-                                <input id="txt_password_login" class="txt fill-width" type="password" placeholder="Enter password"/>
-                            </label>
-
-                            <label for="chk_remember" class="rs pb20 clearfix">
-                                <input id="chk_remember" type="checkbox" class="chk-remember"/>
-                                <span class="lbl-remember">Remember me</span>
-                            </label>
-                            <p class="rs ta-c pb10">
-                                <button class="btn btn-red btn-submit" type="submit">Login</button>
-                            </p>
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                <?= $form->field($model, 'username', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
+                                
+                                </div>
+                                <div class="col">
+                                    <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                </div>
+                            </div>
                             <p class="rs ta-c">
-                                <a href="#" class="fc-orange">I forgot my password</a>
+                                <button class="btn btn-red btn-submit" type="submit">Login</button>
                             </p>
                         </div>
                     </div>
-                </form>
+                <?php ActiveForm::end(); ?>
             </div>
-            </div>
-</div>
+        </div>
+        </div>

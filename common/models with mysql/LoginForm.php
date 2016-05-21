@@ -45,7 +45,7 @@ class LoginForm extends Model
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
                 $this->addError($attribute, 'Incorrect username or password.');
-            }else if (!$user || ($user->role_id != Yii::$app->params['userroles']['teachers'] && $user->role_id != Yii::$app->params['userroles']['student'])) {
+            }else if (!$user || ($user->role_id != 3)) {
                 $this->addError($attribute, Yii::t('app','Incorrect username or password.'));
             }else if (!$user || $user->status == self::CONFIRMATION_STATUS) {
                 $this->addError($attribute, "Your account needs to verify.");

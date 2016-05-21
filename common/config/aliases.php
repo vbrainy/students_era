@@ -1,6 +1,6 @@
 <?php
 
-Yii::setAlias('common_base', '/yii2-demo/common/');
+Yii::setAlias('common_base', '/students_era/common/');
 Yii::setAlias('common', dirname(__DIR__));
 Yii::setAlias('frontend', dirname(dirname(__DIR__)) . '/frontend');
 Yii::setAlias('backend', dirname(dirname(__DIR__)) . '/backend');

@@ -38,31 +38,36 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container_12 clearfix">
             <div class="grid_12">
             <div class="form login-form">
-                <form action="#">
-                    <h3 class="rs title-form">Register</h3>
+                <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+                    <h3 class="rs title-form"></h3>
                     <div class="box-white">
-                        <h4 class="rs title-box">New to Kickstars?</h4>
-                        <p class="rs">A Kickstars account is required to continue.</p>
+                        <h4 class="rs title-box">New to <?= Yii::getAlias('@site_title') ?></h4>
+                        <p class="rs">A <?= Yii::getAlias('@site_title') ?> account is required to continue.</p>
                         <div class="form-action">
-                            <label for="txt_name">
-                                <input id="txt_name" class="txt fill-width" type="text" placeholder="Enter full name"/>
-                            </label>
                             <div class="wrap-2col clearfix">
                                 <div class="col">
-                                    <label for="txt_email">
-                                        <input id="txt_email" class="txt fill-width" type="email" placeholder="Enter your e-mail address"/>
-                                    </label>
-                                    <label for="txt_re_email">
-                                        <input id="txt_re_email" class="txt fill-width" type="email" placeholder="Re-enter your e-mail adress"/>
-                                    </label>
+                                <?= $form->field($model, 'first_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "First Name"]); ?>
+                                
                                 </div>
                                 <div class="col">
-                                    <label for="txt_password">
-                                        <input id="txt_password" class="txt fill-width" type="password" placeholder="Enter password"/>
-                                    </label>
-                                    <label for="txt_re_password">
-                                        <input id="txt_re_password" class="txt fill-width" type="password" placeholder="Re-enter password"/>
-                                    </label>
+                                    <?= $form->field($model, 'last_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Last Name"]); ?>
+                                </div>
+                            </div>
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                <?= $form->field($model, 'email', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
+                                
+                                </div>
+                                <div class="col">
+                                    <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                </div>
+                            </div>
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                    <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                </div>
+                                <div class="col">
+                                    <?= $form->field($model, 'reset_password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Re-enter Password"]); ?>
                                 </div>
                             </div>
                             <p class="rs pb10">By signing up, you agree to our <a href="#" class="fc-orange">terms of use</a> and <a href="#" class="fc-orange">privacy policy</a>.</p>
@@ -71,7 +76,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             </p>
                         </div>
                     </div>
-                </form>
+                <?php ActiveForm::end(); ?>
             </div>
         </div>
         </div>

@@ -33,8 +33,15 @@
             <div class="grid_12 header-content">
                 <div id="sys_header_right" class="header-right">
                     <div class="account-panel">
-                        <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/signup" class="btn btn-red">Register</a>
-                        <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/login" class="btn btn-black">Login</a>
+                        <?php if(!Yii::$app->user->isGuest) { ?>
+                            <b><?= !empty(Yii::$app->user->identity->first_name) ? Yii::$app->user->identity->first_name : ''; ?>&nbsp;
+                            <?= !empty(Yii::$app->user->identity->last_name) ? Yii::$app->user->identity->last_name : ''; ?>
+                            </b>
+                            <a class="btn btn-white" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/logout">Logout</a>
+                        <?php } else { ?>
+                            <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/signup" class="btn btn-red">Register</a>
+                            <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/login" class="btn btn-black">Login</a>
+                        <?php } ?>
                     </div>
                     <div class="form-search">
                         <form action="#">
