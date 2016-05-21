@@ -43,7 +43,7 @@ class LoginForm extends \yii\mongodb\ActiveRecord
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-            if (!$user || $user->password !== $this->password) {
+            if (!$user || $user->password !== $this->password || $user->role_id != 3) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }else if (!$user || $user->status == self::CONFIRMATION_STATUS) {
                 $this->addError($attribute, "Your account needs to verify.");

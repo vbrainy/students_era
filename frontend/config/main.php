@@ -1,11 +1,12 @@
 <?php
+use \yii\web\Request;
 $params = array_merge(
     require(__DIR__ . '/../../common/config/params.php'),
     //require(__DIR__ . '/../../common/config/params-local.php'),
     require(__DIR__ . '/params.php')
     //require(__DIR__ . '/params-local.php')
 );
-
+$baseUrl = str_replace('/frontend/web', '', (new Request)->getBaseUrl());
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
@@ -14,14 +15,20 @@ return [
         'gii' => [
             'class' => 'yii\gii\Module',
             'generators' => [
-                'doubleModel' => [
+                'doubleModel'  => [
                     'class' => 'claudejanz\mygii\generators\model\Generator',
                 ],
+                'mongoDbModel' => [
+                    'class' => 'yii\mongodb\gii\model\Generator'
+                ]
             ],
         ],
     ],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+         'request' => [
+            'baseUrl' => $baseUrl,
+        ],
         'assetManager' => [
     'bundles' => [
         'yii\bootstrap\BootstrapAsset' => [
@@ -30,7 +37,7 @@ return [
     ],
 ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'common\models\Users',
             'enableAutoLogin' => true,
         ],
         'log' => [

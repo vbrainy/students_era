@@ -33,13 +33,13 @@ $(function(){
 	/* get Twitter
 	---------------------------------------------------------- */
 
-	$('#sys_lst_tweets').tweet({
+	/*$('#sys_lst_tweets').tweet({
 			modpath: '/twitter/',
 			count: 2,
 			loading_text: '<p class="rs ta-c fc-white">loading Twitter <br /><img src="images/ajax-loader.gif" alt="loading"/></p>',
 			username: 'megadrupal',
 			template: '<p class="rs tweet-mind">{text}</p><p class="rs timestamp">{time}</p><i class="icon iTwitter"></i>',
-	});
+	});*/
 	
 	/* Project Slider
 	---------------------------------------------------------- */	

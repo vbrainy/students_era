@@ -42,11 +42,11 @@ class AdminCoreController extends Controller
         if (!Yii::$app->user->isGuest)
         {
             $snRoleId      = Yii::$app->user->identity->role_id;
-            $omAuthActions = UserRules::find()->where(['role_id' => $snRoleId, 'privilieges_controller' => $ssControllerName])->asArray()->one();
+            $omAuthActions = UserRules::find()->where(['role_id' => $snRoleId, 'privileges_controller' => $ssControllerName])->asArray()->one();
             if ($omAuthActions)
             {
                 $amAccessRules['access']['rules'][] = array(
-                    'actions' => explode(',', $omAuthActions['privilieges_actions']),
+                    'actions' => explode(',', $omAuthActions['privileges_action']),
                     'allow'   => true,
                     'roles'   => ['@'],
                 );
