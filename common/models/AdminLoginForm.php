@@ -61,7 +61,7 @@ class AdminLoginForm extends \yii\mongodb\ActiveRecord {
         if (!$this->hasErrors()) {
             $user = $this->getUser();    
             //p($user);
-            if (!$user || $user->password !== $this->password) {
+            if (!$user || $user->password !== $this->password || $user->role_id != 2) {
                 $this->addError($attribute, Yii::t('app','Incorrect username or password.'));
             }else if (!$user || $user->status != self::ACTIVE_STATUS) {
                 $this->addError($attribute, Yii::t('app','Your Acount has been in active so please contact to administrator.'));
