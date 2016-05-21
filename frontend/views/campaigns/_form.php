@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model common\models\Campaigns */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<?php /*
 <div class="campaigns-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -41,3 +41,34 @@ use yii\widgets\ActiveForm;
     <?php ActiveForm::end(); ?>
 
 </div>
+ * 
+ */?>
+<div class="container_12 clearfix">
+            <div class="grid_12">
+            <div class="form login-form">
+                <?php $form = ActiveForm::begin(['id' => 'form-camp']); ?>
+                    <h3 class="rs title-form"></h3>
+                    <div class="box-white">
+                        <h4 class="rs title-box">Create Your Campaign</h4>
+                        <p class="rs">Please fill details to continue.</p>
+                        <div class="form-action">
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                    <label for="title">
+                                        <?= $form->field($model, 'title', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Title"]); ?>
+                                    </label>
+                                
+                                    <label for="password">
+                                    <?= $form->field($model, 'description', ['template'=> '{input}{error}'])->textarea(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                        </label>
+                                </div>
+                            </div>
+                            <p class="rs ta-c">
+                                <button class="btn btn-red btn-submit" type="submit">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                <?php ActiveForm::end(); ?>
+            </div>
+        </div>
+        </div>
