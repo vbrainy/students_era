@@ -46,28 +46,39 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="form-action">
                             <div class="wrap-2col clearfix">
                                 <div class="col">
+                                    <label for="first_name">
                                 <?= $form->field($model, 'first_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "First Name"]); ?>
+                                    </label>
                                 
                                 </div>
                                 <div class="col">
+                                    <label for="last_name">
                                     <?= $form->field($model, 'last_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Last Name"]); ?>
+                                        </label>
                                 </div>
                             </div>
                             <div class="wrap-2col clearfix">
                                 <div class="col">
+                                    <label for="email">
                                 <?= $form->field($model, 'email', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
-                                
+                                </label>
                                 </div>
                                 <div class="col">
+                                    <label for="password">
                                     <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                        </label>
                                 </div>
                             </div>
                             <div class="wrap-2col clearfix">
                                 <div class="col">
+                                    <label for="password">
                                     <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                        </label>
                                 </div>
                                 <div class="col">
+                                    <label for="reset_password">
                                     <?= $form->field($model, 'reset_password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Re-enter Password"]); ?>
+                                        </label>
                                 </div>
                             </div>
                             <p class="rs pb10">By signing up, you agree to our <a href="#" class="fc-orange">terms of use</a> and <a href="#" class="fc-orange">privacy policy</a>.</p>

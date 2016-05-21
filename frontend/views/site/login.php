@@ -44,11 +44,13 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="form-action">
                             <div class="wrap-2col clearfix">
                                 <div class="col">
+                                    <label for="username">
                                 <?= $form->field($model, 'username', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
+                                    </label>
                                 
-                                </div>
-                                <div class="col">
+                                    <label for="password">
                                     <?= $form->field($model, 'password', ['template'=> '{input}{error}'])->passwordInput(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                        </label>
                                 </div>
                             </div>
                             <p class="rs ta-c">
