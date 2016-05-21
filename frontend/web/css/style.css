@@ -1240,11 +1240,17 @@ a.fc-gray-dark,.fc-gray-dark{color: #999}
 .header-content .header-left{
     float: left;
 }
-#logo{
+/*#logo{
     float: left;
     margin: 0;
     padding:6px 0 0 0;
     width: 240px;
+}*/
+#logo{
+    float: left;
+    margin: 0 18px 10px 0;
+    position: relative;
+    width: 135px;
 }
 #header .main-nav{
     float: left;
