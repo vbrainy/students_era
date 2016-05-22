@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Campaigns';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<?php /*
 <div class="campaigns-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -42,4 +43,11 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
+</div>
+*/
+?>
+<div class="container_12 clearfix">
+            <div class="grid_12">
+List of Campaigns
+            </div>
 </div>

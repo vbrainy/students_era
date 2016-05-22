@@ -47,7 +47,7 @@
                             <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/login" class="btn btn-black">Login</a>
                         <?php } ?>
                     </div>
-                    <div class="form-search">
+<!--                    <div class="form-search">
                         <form action="#">
                             <label for="sys_txt_keyword">
                                 <input id="sys_txt_keyword" class="txt-keyword" type="text" placeholder="Search projects"/>
@@ -55,7 +55,7 @@
                             <button class="btn-search" type="reset"><i class="icon iMagnifier"></i></button>
                             <button class="btn-reset-keyword" type="reset"><i class="icon iXHover"></i></button>
                         </form>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="header-left">
                     <h1 id="logo">
