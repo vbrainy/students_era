@@ -6,7 +6,7 @@
                         <ul id="main-menu" class="nav nav-horizontal clearfix">
                             <li class="active"><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/index">Home</a></li>
                             <li class="sep"></li>
-                            <li><a href="all-pages.html">About Us</a></li>
+                            <li><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/pages/about_us">About Us</a></li>
                             <li class="sep"></li>
                             <li><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/campaigns/index">Campaigns</a></li>
                             <li class="sep"></li>
