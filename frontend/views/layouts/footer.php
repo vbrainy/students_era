@@ -3,7 +3,7 @@
             <div class="grid_4 about-us">
                 <h3 class="rs title">About</h3>
                 <p class="rs description">Donec rutrum elit ac arcu bibendum rhoncus in vitae turpis. Quisque fermentum gravida eros non faucibus. Curabitur fermentum, arcu sed cursus commodo.</p>
-                <p class="rs email"><a class="fc-default  be-fc-orange" href="mailto:info@megadrupal.com">info@megadrupal.com</a></p>
+                <p class="rs email"><a class="fc-default  be-fc-orange" href="mailto:<?= Yii::$app->params['admin_email'] ?>"><?= Yii::$app->params['admin_email'] ?></a></p>
                 <p class="rs">+1 (555) 555 - 55 - 55</p>
             </div><!--end: .contact-info -->
             <div class="grid_4 email-newsletter">
@@ -26,12 +26,13 @@
                     <ul class="rs">
                         <li><a class="be-fc-orange" href="#">What is <?= Yii::getAlias('@site_title') ?></a></li>
                         <li><a class="be-fc-orange" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/campaigns/create">Start a project</a></li>
-                        <li><a class="be-fc-orange" href="#">Popular</a></li>
+                        
                     </ul>
                     <ul class="rs">
+                        <li><a class="be-fc-orange" href="#">Popular</a></li>
                     <li><a class="be-fc-orange" href="#">Recent</a></li>
-                        <li><a class="be-fc-orange" href="#">Small Projects</a></li>
-                        <li><a class="be-fc-orange" href="#">Most Funded</a></li>
+<!--                        <li><a class="be-fc-orange" href="#">Small Projects</a></li>
+                        <li><a class="be-fc-orange" href="#">Most Funded</a></li>-->
                     </ul>
                     <div class="clear"></div>
                 </div>

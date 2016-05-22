@@ -14,6 +14,7 @@ class SignupForm extends Model
     public $email;
     public $password, $reset_password;
     public $first_name, $last_name;
+    public $country, $states;
 
     
     /**
@@ -31,7 +32,7 @@ class SignupForm extends Model
     {
         return [
             //['username', 'filter', 'filter' => 'trim'],
-            [['first_name', 'last_name'], 'required'],
+            [['first_name', 'last_name', 'country', 'states'], 'required'],
             //['username', 'unique', 'targetClass' => '\common\models\Users', 'message' => 'This username has already been taken.'],
             //['username', 'string', 'min' => 2, 'max' => 255],
             ['email', 'filter', 'filter' => 'trim'],

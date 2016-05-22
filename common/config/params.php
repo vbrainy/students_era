@@ -2,6 +2,7 @@
 return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',
+    'admin_email'=> 'salimrahza@gmail.com',
     'user.passwordResetTokenExpire' => 3600,
     'site_url' => stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'],
     //set user roleid
