@@ -48,7 +48,7 @@ use yii\widgets\ActiveForm;
             <div class="form login-form">
                 <?php $form = ActiveForm::begin(['id' => 'form-camp']); ?>
                     <h3 class="rs title-form"></h3>
-                    <div class="box-white">
+                    <div class="box-white" style="height: auto;">
                         <h4 class="rs title-box">Create Your Campaign</h4>
                         <p class="rs">Please fill details to continue.</p>
                         <div class="form-action">
@@ -63,7 +63,7 @@ use yii\widgets\ActiveForm;
                                         </label>
                                 </div>
                             </div>
-                            <p class="rs ta-c">
+                            <p class="rs ta-l">
                                 <button class="btn btn-red btn-submit" type="submit">Submit</button>
                             </p>
                         </div>

@@ -12,6 +12,7 @@ class Users extends \common\models\base\UsersBase implements IdentityInterface
     public $confirm_password;
     public $schools_type;
     public $captcha;
+    public $country, $states, $city;
 
     const STATUS_ACTIVE = 1;
 

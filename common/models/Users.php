@@ -50,6 +50,9 @@ class Users extends \yii\mongodb\ActiveRecord implements IdentityInterface
             'password',
             'first_name',
             'last_name',
+            'country',
+            'states',
+            'city',
             'dob',
             'gender',
             'phone_number',
@@ -158,7 +161,7 @@ class Users extends \yii\mongodb\ActiveRecord implements IdentityInterface
      */
     public function getAuthKey()
     {
-        return $this->auth_key;
+        //return $this->auth_key;
     }
 
     /**

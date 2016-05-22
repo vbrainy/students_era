@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="form login-form">
                 <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                     <h3 class="rs title-form"></h3>
-                    <div class="box-white">
+                    <div class="box-white" style="height: auto;">
                         <h4 class="rs title-box">Already Have an Account?</h4>
                         <p class="rs">Please log in to continue.</p>
                         <div class="form-action">
@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         </label>
                                 </div>
                             </div>
-                            <p class="rs ta-c">
+                            <p class="rs ta-l">
                                 <button class="btn btn-red btn-submit" type="submit">Login</button>
                             </p>
                         </div>

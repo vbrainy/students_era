@@ -14,7 +14,7 @@ class SignupForm extends Model
     public $email;
     public $password, $reset_password;
     public $first_name, $last_name;
-    public $country, $states;
+    public $country, $states, $city;
 
     
     /**
@@ -57,6 +57,9 @@ class SignupForm extends Model
             $user->last_name = $this->last_name;
             $user->email = $this->email;
             $user->role_id = 3;
+            $user->country = $this->country;
+            $user->states = $this->states;
+            $user->city = $this->city;
             $user->password = $this->password;
             $user->status = '1';
             $user->created_at = date('Y-m-d h:i:s');

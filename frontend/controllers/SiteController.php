@@ -10,14 +10,12 @@ use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\Users;
+use frontend\components\FrontendController;
 
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends FrontendController
 {
     
     /**

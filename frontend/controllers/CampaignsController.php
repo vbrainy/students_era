@@ -8,24 +8,12 @@ use common\models\CampaignsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use frontend\components\FrontendController;
 /**
  * CampaignsController implements the CRUD actions for Campaigns model.
  */
-class CampaignsController extends Controller
+class CampaignsController extends FrontendController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
-
     /**
      * Lists all Campaigns models.
      * @return mixed

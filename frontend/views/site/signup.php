@@ -9,38 +9,12 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<?php /*
-<div class="site-signup">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to signup:</p>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
-                <?= $form->field($model, 'username') ?>
-                <?= $form->field($model, 'email') ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
-                <div class="form-group">
-                    <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-                </div>
-            <?php ActiveForm::end(); ?>
-            
-            
-
-        </div>
-    </div>
-    
-</div>
- * 
- */
-?>
 <div class="container_12 clearfix">
             <div class="grid_12">
             <div class="form login-form">
                 <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                     <h3 class="rs title-form"></h3>
-                    <div class="box-white" style="height: 500px;">
+                    <div class="box-white" style="height: auto;">
                         <h4 class="rs title-box">New to <?= Yii::getAlias('@site_title') ?></h4>
                         <p class="rs">A <?= Yii::getAlias('@site_title') ?> account is required to continue.</p>
                         <div class="form-action">
@@ -60,21 +34,25 @@ $this->params['breadcrumbs'][] = $this->title;
                             <div class="wrap-2col clearfix">
                                 <div class="col">
                                     <label for="email">
-                                <?= $form->field($model, 'email', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
-                                </label>
-                                
+                                    <?= $form->field($model, 'email', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Email"]); ?>
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="wrap-2col clearfix">
                                 <div class="col">
                                     <label for="country">
                                     <?= $form->field($model, 'country', ['template'=> '{input}{error}'])->dropDownList(\common\models\Country::getAllCountry(),['class'=> 'txt fill-width']); ?>
                                     </label>
                                 </div>
+                            </div>
+                            <div class="wrap-2col clearfix">
                                 <div class="col">
                                     <label for="states">
                                     <?= $form->field($model, 'states', ['template'=> '{input}{error}'])->dropDownList(\common\models\States::getAllStatesByCountry(4),['class'=> 'txt fill-width']); ?>
                                         </label>
+                                </div>
+                                <div class="col">
+                                    <label for="city">
+                                    <?= $form->field($model, 'city', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> 'City']); ?>
+                                    </label>
                                 </div>
                             </div>
                             <div class="wrap-2col clearfix">
@@ -90,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </div>
                             </div>
                             <p class="rs pb10">By signing up, you agree to our <a href="#" class="fc-orange">terms of use</a> and <a href="#" class="fc-orange">privacy policy</a>.</p>
-                            <p class="rs ta-c">
+                            <p class="rs ta-l">
                                 <button class="btn btn-red btn-submit" type="submit">Register</button>
                             </p>
                         </div>

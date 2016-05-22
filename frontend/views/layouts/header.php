@@ -10,7 +10,11 @@
                             <li class="sep"></li>
                             <li><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/campaigns/index">Campaigns</a></li>
                             <li class="sep"></li>
-                            <li><a href="<?php echo yii\helpers\Url::to('site/contact') ?>">Contact</a></li>
+                            <li><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/contact">Contact</a></li>
+                            <?php if(!Yii::$app->user->isGuest) { ?>
+                            <li class="sep"></li>
+                            <li><a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/logout">Logout</a></li>
+                            <?php } ?>
                         </ul>
                         <a id="btn-toogle-menu" class="btn-toogle-menu" href="#alternate-menu">
                             <span class="line-bar"></span>
@@ -32,12 +36,12 @@
         <div class="container_12 clearfix">
             <div class="grid_12 header-content">
                 <div id="sys_header_right" class="header-right">
-                    <div class="account-panel">
+                    <div class="account-panel" style="font-size: 16px;">
                         <?php if(!Yii::$app->user->isGuest) { ?>
                             <b><?= !empty(Yii::$app->user->identity->first_name) ? Yii::$app->user->identity->first_name : ''; ?>&nbsp;
                             <?= !empty(Yii::$app->user->identity->last_name) ? Yii::$app->user->identity->last_name : ''; ?>
                             </b>
-                            <a class="btn btn-white" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/logout">Logout</a>
+<!--                            <a class="btn btn-white" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/logout">Logout</a>-->
                         <?php } else { ?>
                             <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/signup" class="btn btn-red">Register</a>
                             <a href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/site/login" class="btn btn-black">Login</a>
