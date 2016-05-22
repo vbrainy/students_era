@@ -1,19 +1,12 @@
 <footer id="footer">
         <div class="container_12 main-footer">
-            <div class="grid_3 about-us">
+            <div class="grid_4 about-us">
                 <h3 class="rs title">About</h3>
                 <p class="rs description">Donec rutrum elit ac arcu bibendum rhoncus in vitae turpis. Quisque fermentum gravida eros non faucibus. Curabitur fermentum, arcu sed cursus commodo.</p>
                 <p class="rs email"><a class="fc-default  be-fc-orange" href="mailto:info@megadrupal.com">info@megadrupal.com</a></p>
                 <p class="rs">+1 (555) 555 - 55 - 55</p>
             </div><!--end: .contact-info -->
-            <div class="grid_3 recent-tweets">
-                <h3 class="rs title">Recent Tweets</h3>
-<!--                <div class="lst-tweets" id="sys_lst_tweets">
-                    
-                </div>-->
-            </div><!--end: .recent-tweets -->
-            <div class="clear clear-2col"></div>
-            <div class="grid_3 email-newsletter">
+            <div class="grid_4 email-newsletter">
                 <h3 class="rs title">Newsletter Signup</h3>
                 <div class="inner">
                     <p class="rs description">Nam aliquet, velit quis consequat interdum, odio dolor elementum.</p>
@@ -27,20 +20,16 @@
                     </form>
                 </div>
             </div><!--end: .email-newsletter -->
-            <div class="grid_3">
+            <div class="grid_4">
                 <h3 class="rs title">Discover &amp; Create</h3>
                 <div class="footer-menu">
                     <ul class="rs">
-                        <li><a class="be-fc-orange" href="#">What is Kickstars</a></li>
-                        <li><a class="be-fc-orange" href="#">Start a project</a></li>
-                        <li><a class="be-fc-orange" href="#">Project Guidlines</a></li>
-                        <li><a class="be-fc-orange" href="#">Press</a></li>
-                        <li><a class="be-fc-orange" href="#">Stats</a></li>
+                        <li><a class="be-fc-orange" href="#">What is <?= Yii::getAlias('@site_title') ?></a></li>
+                        <li><a class="be-fc-orange" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/campaigns/create">Start a project</a></li>
+                        <li><a class="be-fc-orange" href="#">Popular</a></li>
                     </ul>
                     <ul class="rs">
-                        <li><a class="be-fc-orange" href="#">Staff Picks</a></li>
-                        <li><a class="be-fc-orange" href="#">Popular</a></li>
-                        <li><a class="be-fc-orange" href="#">Recent</a></li>
+                    <li><a class="be-fc-orange" href="#">Recent</a></li>
                         <li><a class="be-fc-orange" href="#">Small Projects</a></li>
                         <li><a class="be-fc-orange" href="#">Most Funded</a></li>
                     </ul>
@@ -49,16 +38,16 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="copyright">
+    <div class="copyright" style="margin-top: 26px;">
             <div class="container_12">
                 <div class="grid_12">
-                    <a class="logo-footer" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>"><img src="images/logo-2.png" alt="<?= Yii::getAlias('@site_title') ?>"/></a>
+                    <a class="logo-footer" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>"><?= Yii::getAlias('@site_title') ?></a>
                     <p class="rs term-privacy">
-                        <a class="fw-b be-fc-orange" href="single.html">Terms & Conditions</a>
+                        <a class="fw-b be-fc-orange" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/pages/terms_condition">Terms & Conditions</a>
                         <span class="sep">/</span>
-                        <a class="fw-b be-fc-orange" href="single.html">Privacy Policy</a>
+                        <a class="fw-b be-fc-orange" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/pages/policy">Privacy Policy</a>
                         <span class="sep">/</span>
-                        <a class="fw-b be-fc-orange" href="#">FAQ</a>
+                        <a class="fw-b be-fc-orange" href="<?php echo Yii::$app->getUrlManager()->baseUrl ?>/pages/faq">FAQ</a>
                     </p>
                 </div>
                 <div class="clear"></div>

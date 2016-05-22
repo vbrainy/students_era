@@ -59,7 +59,9 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => []
+            'rules' => [
+                'pages/<key:\w+>' => 'pages/index',
+            ]
         ]
     ],
     'params' => $params,

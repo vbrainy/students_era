@@ -59,7 +59,7 @@ use yii\widgets\ActiveForm;
                                     </label>
                                 
                                     <label for="password">
-                                    <?= $form->field($model, 'description', ['template'=> '{input}{error}'])->textarea(['class'=> 'txt fill-width', 'placeholder'=> "Password"]); ?>
+                                    <?= $form->field($model, 'description', ['template'=> '{input}{error}'])->textarea(['class'=> 'txt fill-width', 'placeholder'=> "Describe your campaign"]); ?>
                                         </label>
                                 </div>
                             </div>
