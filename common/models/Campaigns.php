@@ -38,6 +38,8 @@ class Campaigns extends \yii\mongodb\ActiveRecord
         return [
             '_id',
             'users_id',
+            'first_name',
+            'last_name',
             'title',
             'country',
             'state',
@@ -57,7 +59,7 @@ class Campaigns extends \yii\mongodb\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'description'], 'required'],
+            [['title', 'description', 'first_name', 'last_name', 'university'], 'required'],
             [['users_id', 'title', 'country', 'state', 'university', 'description', 'video_url', 'status', 'days_run', 'created_at', 'updated_at'], 'safe']
         ];
     }

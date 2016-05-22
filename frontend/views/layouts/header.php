@@ -63,7 +63,7 @@
                     </h1>
                     <div class="main-nav clearfix">
                         <div class="nav-item">
-                            <a href="category.html" class="nav-title">Discover</a>
+                            <a href="#" class="nav-title">Discover</a>
                             <p class="rs nav-description">Great Projects</p>
                         </div>
                         <span class="sep"></span>

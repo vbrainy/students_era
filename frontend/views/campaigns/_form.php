@@ -54,13 +54,52 @@ use yii\widgets\ActiveForm;
                         <div class="form-action">
                             <div class="wrap-2col clearfix">
                                 <div class="col">
+                                    <label for="first_name">
+                                        <?= $form->field($model, 'first_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "First Name"]); ?>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label for="last_name">
+                                    <?= $form->field($model, 'last_name', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Last Name"]); ?>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                    <label for="country">
+                                    <?= $form->field($model, 'country', ['template'=> '{input}{error}'])->dropDownList(\common\models\Country::getAllCountry(),['class'=> 'txt fill-width']); ?>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label for="state">
+                                    <?= $form->field($model, 'state', ['template'=> '{input}{error}'])->dropDownList(\common\models\States::getAllStatesByCountry(4),['class'=> 'txt fill-width']); ?>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
                                     <label for="title">
                                         <?= $form->field($model, 'title', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "Title"]); ?>
                                     </label>
-                                
-                                    <label for="password">
-                                    <?= $form->field($model, 'description', ['template'=> '{input}{error}'])->textarea(['class'=> 'txt fill-width', 'placeholder'=> "Describe your campaign"]); ?>
+                                </div>
+                                <div class="col">
+                                    <label for="university">
+                                    <?= $form->field($model, 'university', ['template'=> '{input}{error}'])->textInput(['class'=> 'txt fill-width', 'placeholder'=> "University"]); ?>
                                         </label>
+                                </div>
+                            </div>
+                            <div class="wrap-2col clearfix">
+                                <div class="col">
+                                    <label for="description">
+                                    <?= $form->field($model, 'description', ['template'=> '{input}{error}'])->textarea(['class'=> 'txt fill-width', 'placeholder'=> "Describe your campaign"]); ?>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label for="video_url">
+                                    <?= $form->field($model, 'video_url', ['template'=> '{input}{error}'])->fileInput(['class'=> 'txt fill-width']); ?>
+                                        </label>
+                                    
                                 </div>
                             </div>
                             <p class="rs ta-l">
